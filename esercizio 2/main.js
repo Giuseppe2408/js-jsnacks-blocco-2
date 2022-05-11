@@ -1,8 +1,12 @@
 // crea un array vuoto
-const Emptyarray = [];
-// chiedi all'utente di inserire un numero
-let inputNumber = parseInt(prompt('inserisci numero'));
-Emptyarray.push(inputNumber);
+let Emptyarray = [];
+let somma = 0;
+do {
+    Emptyarray.push(somma);
+    let inputNumber = parseInt(prompt('inserisci numero'));
+    // somma
+    somma += inputNumber;
+} while (somma <= 50);
+    
+
 console.log(Emptyarray);
-// fare in modo che si inserisca nell'array
-// continua a chiedere i numeri all'utente e inserirli fin quando la somma non è superiore a 50
